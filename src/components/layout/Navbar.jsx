@@ -86,7 +86,7 @@ const Navbar = () => {
         {/* CTA */}
         <div className="hidden md:block">
           <Link to='/booking'>
-          <Button className="px-4 py-2 text-sm text-white whitespace-nowrap">Book Now</Button>
+          <Button className="px-4 py-2 text-sm hover hover:bg-primary-hover text-white whitespace-nowrap">Book Now</Button>
           </Link>
         </div>
 

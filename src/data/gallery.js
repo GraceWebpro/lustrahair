@@ -27,3 +27,26 @@ export const gallery = [
     { image: Cut12, title: "VIP Grooming" },
     { image: Cut13, title: "Hair Wash" },
 ];
+
+const styles = [
+    {
+      image: "https://images.unsplash.com/photo-1595475884562-073c30d45670?w=900",
+      label: "Luxury Braids"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=900",
+      label: "Silk Press"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=900",
+      label: "Wig Styling"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?w=900",
+      label: "Boho Braids"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=900",
+      label: "Cornrows"
+    }
+  ];

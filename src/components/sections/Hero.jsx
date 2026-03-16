@@ -1,9 +1,11 @@
 import { Star } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import BgImg from '../../assets/gallery/bgImage.jpeg'
-import HeroImg from '../../assets/hero/HeroImage.avif'
-import { useState } from "react";
+import { Link } from "react-router-dom";
+import hero1 from '../../assets/gallery/gal7.jpeg'
+import hero3 from '../../assets/gallery/gal3.jpeg'
+import hero2 from '../../assets/gallery/gal6.jpeg'
+import hero4 from '../../assets/gallery/gal4.jpeg'
 
 // Simple reusable Button component
 export function Button({ children, variant = "primary", className = "", ...props }) {
@@ -64,7 +66,7 @@ export default function Hero() {
               repeat: Infinity,
               ease: "easeInOut"
             }}
-          src="https://images.unsplash.com/photo-1595475884562-073c30d45670?w=600"
+          src={hero1}
           className="rounded-xl h-40 w-full object-cover"
         />
 
@@ -77,7 +79,7 @@ export default function Hero() {
               repeat: Infinity,
               ease: "easeInOut"
             }}
-          src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?w=600"
+          src={hero2}
           className="rounded-xl h-32 w-full object-cover"
         />
 
@@ -90,7 +92,7 @@ export default function Hero() {
               repeat: Infinity,
               ease: "easeInOut"
             }}
-          src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600"
+          src={hero3}
           className="rounded-xl h-32 w-full object-cover"
         />
 
@@ -103,7 +105,7 @@ export default function Hero() {
               repeat: Infinity,
               ease: "easeInOut"
             }}
-          src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600"
+          src={hero4}
           className="rounded-xl h-40 w-full object-cover"
         />
 
@@ -130,11 +132,11 @@ export default function Hero() {
             Premium braids, luxury wigs, silk press and flawless styles
             crafted by professional hairstylists.
           </p>
-
-          <button className="mt-7 px-7 py-3 border border-primary/40 bg-primary hover:bg-primary-hover text-white font-semibold rounded-full transition">
+<Link to="/booking">
+          <button className="mt-7 px-7 py-3 border border-primary/40 bg-primary hover:bg-[#B92C70] text-white font-semibold rounded-full cursor-pointer transition">
             Book Appointment
           </button>
-
+</Link>
           {/* Floating Style Labels */}
           <div className="flex flex-wrap gap-3 mt-7 text-xs lg:text-sm">
             <span className="px-4 py-1 border border-primary rounded-full text-white">
@@ -165,7 +167,7 @@ export default function Hero() {
               ease: "easeInOut"
             }}
 
-            src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?w=600"
+            src={hero1}
             className="rounded-2xl object-cover h-56 w-full shadow-xl hover:scale-105 transition mt-10"
           />
 
@@ -177,7 +179,7 @@ export default function Hero() {
               repeat: Infinity,
               ease: "easeInOut"
             }}
-            src="https://images.unsplash.com/photo-1595475884562-073c30d45670?w=600"
+            src={hero2}
             className="rounded-2xl object-cover h-72 w-full shadow-xl hover:scale-105 transition mt-10"
           />
 
@@ -189,7 +191,7 @@ export default function Hero() {
               repeat: Infinity,
               ease: "easeInOut"
             }}
-            src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600"
+            src={hero3}
             className="rounded-2xl object-cover h-72 w-full shadow-xl hover:scale-105 transition"
           />
 
@@ -201,7 +203,7 @@ export default function Hero() {
               repeat: Infinity,
               ease: "easeInOut"
             }}
-            src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600"
+            src={hero4}
             className="rounded-2xl object-cover h-56 w-full shadow-xl hover:scale-105 transition"
           />
 
