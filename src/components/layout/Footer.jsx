@@ -47,9 +47,9 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="text-2xl font-serif text-white tracking-wide">
+              <Link to='/'><div className="text-2xl font-serif text-white tracking-wide">
                 Lustra<span className="text-primary">Hair</span>
-              </div>
+              </div></Link>
             </div>
 
             <p className="text-gray-400 leading-relaxed">

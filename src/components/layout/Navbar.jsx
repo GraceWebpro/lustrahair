@@ -85,7 +85,7 @@ const Navbar = () => {
 
         {/* CTA */}
         <div className="hidden md:block">
-          <Link to='/#booking'>
+          <Link to='/booking'>
           <Button className="px-4 py-2 text-sm text-white whitespace-nowrap">Book Now</Button>
           </Link>
         </div>
@@ -124,7 +124,7 @@ const Navbar = () => {
                  </button>
                );
              })}
-            <Link to='/#booking'>
+            <Link to='/booking'>
               <Button className="w-full">Book Appointment</Button>
             </Link>
           </div>

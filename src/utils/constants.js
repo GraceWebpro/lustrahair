@@ -20,9 +20,9 @@ export const ABOUT_STATS = [
 
 export const NAV_LINKS = [
     { id: "home", label: "Home", type: "route", path: "/" },
-    { id: "services", label: "Services", type: "section" },
-    { id: "gallery", label: "Gallery", type: "section" },
-    { id: "about", label: "About", type: "section" },
+    { id: "services", label: "Services", type: "route", path: "/services" },
+    { id: "gallery", label: "Gallery", type: "route", path: "/gallery" },
+    { id: "about", label: "About", type: "route", path: "/about" },
     { id: "contact", label: "Contact", type: "route", path: "/contact" },
 ];
   

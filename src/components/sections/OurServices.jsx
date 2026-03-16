@@ -35,7 +35,7 @@ const services = [
 
 export default function SignatureServices() {
   return (
-    <section className="bg-[#111111] py-28 mt-[-40px]">
+    <section className="bg-background py-28 mt-[-40px]">
 
       <div className="max-w-7xl mx-auto px-6">
 
