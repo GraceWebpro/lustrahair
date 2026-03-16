@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo } from 'react'
+import React, { useEffect } from 'react'
 import Hero from '../components/sections/Hero'
 import Testimonials from '../components/sections/Testimonials'
 import { useLocation } from "react-router-dom";
@@ -9,7 +9,6 @@ import SignatureServices from '../components/sections/OurServices';
 import InspirationGallery from '../components/sections/GallerySection';
 import WhyChooseUs from '../components/sections/AboutPremium';
 import BookingCTA from '../components/sections/BookingCTA';
-import BookingSection from '../components/sections/BookingSection';
 import InstagramShowcase from '../components/sections/InstagramShow';
 import FAQ from '../components/sections/FAQ';
 import BeforeAfterSection from '../components/sections/BeforeAfter';
