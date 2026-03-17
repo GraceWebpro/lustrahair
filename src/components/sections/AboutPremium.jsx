@@ -1,28 +1,6 @@
 import { motion } from "framer-motion";
-import { Sparkles, Scissors, Crown, HeartHandshake } from "lucide-react";
-
-const features = [
-  {
-    icon: Crown,
-    title: "Expert Stylists",
-    desc: "Our professional stylists craft luxury hairstyles with precision and creativity."
-  },
-  {
-    icon: Sparkles,
-    title: "Premium Products",
-    desc: "We use high-end salon products that keep your hair healthy and radiant."
-  },
-  {
-    icon: Scissors,
-    title: "Personalized Styling",
-    desc: "Every hairstyle is customized to enhance your natural beauty."
-  },
-  {
-    icon: HeartHandshake,
-    title: "Luxury Experience",
-    desc: "Relax in a calm environment designed for comfort and elegance."
-  }
-];
+import aboutImg from '../../assets/about/salon1.png'
+import { features } from "../../utils/constants";
 
 export default function WhyChooseUs() {
   return (
@@ -71,7 +49,7 @@ At LustraHair we combine professional expertise,
           <div className="mt-10">
 
             <img
-              src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=900"
+              src={aboutImg}
               className="rounded-2xl shadow-2xl"
             />
 

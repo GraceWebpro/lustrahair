@@ -1,14 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-
-const images = [
-  { src: "https://images.unsplash.com/photo-1595475884562-073c30d45670?w=900", category: "Braids" },
-  { src: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=900", category: "Silk Press" },
-  { src: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=900", category: "Wigs" },
-  { src: "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?w=900", category: "Braids" },
-  { src: "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=900", category: "Cornrows" },
-  { src: "https://images.unsplash.com/photo-1594824388853-2b3f3f37f72d?w=900", category: "Natural" }
-];
+import { images } from "../data/gallery";
 
 const filters = ["All", "Braids", "Wigs", "Silk Press", "Cornrows", "Natural"];
 
@@ -129,7 +121,10 @@ export default function GalleryPage() {
           {/* PREV */}
 
           <button
-            onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
+            onClick={() => {
+              setCurrentPage((p) => Math.max(p - 1, 1))
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
             disabled={currentPage === 1}
             className={`px-4 py-2 rounded-full text-sm transition
               ${

@@ -2,10 +2,10 @@ import { Star } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import hero1 from '../../assets/gallery/gal7.jpeg'
-import hero3 from '../../assets/gallery/gal3.jpeg'
-import hero2 from '../../assets/gallery/gal6.jpeg'
-import hero4 from '../../assets/gallery/gal4.jpeg'
+import hero1 from '../../assets/hero/gal7.jpeg'
+import hero3 from '../../assets/hero/gal3.jpeg'
+import hero2 from '../../assets/hero/gal6.jpeg'
+import hero4 from '../../assets/hero/gal4.jpeg'
 
 // Simple reusable Button component
 export function Button({ children, variant = "primary", className = "", ...props }) {

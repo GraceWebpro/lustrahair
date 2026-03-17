@@ -1,26 +1,6 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
-
-const transformations = [
-  {
-    before:
-      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=900",
-    after:
-      "https://images.unsplash.com/photo-1595475884562-073c30d45670?w=900",
-  },
-  {
-    before:
-      "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=900",
-    after:
-      "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=900",
-  },
-  {
-    before:
-      "https://images.unsplash.com/photo-1594824388853-2b3f3f37f72d?w=900",
-    after:
-      "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?w=900",
-  },
-];
+import { transformations } from "../../data/gallery";
 
 function BeforeAfterCard({ before, after }) {
   const [position, setPosition] = useState(50);

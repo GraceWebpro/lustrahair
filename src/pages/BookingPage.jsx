@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Calendar, Clock, User, Phone } from "lucide-react";
+import bookBg from '../assets/about/salon2.png'
 
 export default function BookingPage() {
   return (
@@ -9,7 +10,7 @@ export default function BookingPage() {
 
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=1600"
+          src={bookBg}
           className="w-full h-full object-cover"
         />
       </div>

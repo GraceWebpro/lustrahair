@@ -1,29 +1,7 @@
 import { useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
-
-const styles = [
-  {
-    image: "https://images.unsplash.com/photo-1595475884562-073c30d45670?w=900",
-    label: "Luxury Braids"
-  },
-  {
-    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=900",
-    label: "Silk Press"
-  },
-  {
-    image: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=900",
-    label: "Wig Styling"
-  },
-  {
-    image: "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?w=900",
-    label: "Boho Braids"
-  },
-  {
-    image: "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=900",
-    label: "Cornrows"
-  }
-];
+import { styles } from "../../data/gallery";
 
 export default function InspirationGallery() {
   const [selected, setSelected] = useState(null);
@@ -97,7 +75,7 @@ export default function InspirationGallery() {
           </motion.div>
 
           {/* Standard Images */}
-          {styles.slice(1).map((style, i) => {
+          {styles.slice(1, 6).map((style, i) => {
             const motionY =
             i % 3 === 0 ? y1 : i % 3 === 1 ? y2 : y3;
             return (

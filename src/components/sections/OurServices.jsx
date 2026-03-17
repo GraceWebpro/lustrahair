@@ -1,37 +1,6 @@
 import { motion } from "framer-motion";
+import { services } from "../../data/services";
 
-const services = [
-  {
-    title: "Box Braids",
-    image: "https://images.unsplash.com/photo-1595475884562-073c30d45670?w=800",
-    desc: "Timeless protective braids styled with precision and elegance."
-  },
-  {
-    title: "Silk Press",
-    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800",
-    desc: "Smooth, glossy straight hair with a luxury salon finish."
-  },
-  {
-    title: "Luxury Wig Install",
-    image: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=800",
-    desc: "Flawless wig installations designed for a natural look."
-  },
-  {
-    title: "Boho Braids",
-    image: "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?w=800",
-    desc: "Soft, effortless bohemian braids with a modern twist."
-  },
-  {
-    title: "Cornrows",
-    image: "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=800",
-    desc: "Classic cornrow patterns styled with artistry and care."
-  },
-  {
-    title: "Natural Hair Styling",
-    image: "https://images.unsplash.com/photo-1594824388853-2b3f3f37f72d?w=800",
-    desc: "Enhancing your natural beauty with expert styling."
-  }
-];
 
 export default function SignatureServices() {
   return (
