@@ -1,30 +1,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Star } from "lucide-react";
-
-const testimonials = [
-  {
-    name: "Sophia Williams",
-    role: "Verified Client",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
-    review:
-      "Absolutely the best salon experience I've had. My silk press was flawless and lasted for weeks. The stylists truly understand luxury hair care."
-  },
-  {
-    name: "Amara Johnson",
-    role: "Verified Client",
-    image: "https://randomuser.me/api/portraits/women/68.jpg",
-    review:
-      "LustraHair completely transformed my look. The braids were neat, lightweight and beautifully styled. I received compliments everywhere I went."
-  },
-  {
-    name: "Danielle Brown",
-    role: "Verified Client",
-    image: "https://randomuser.me/api/portraits/women/65.jpg",
-    review:
-      "Professional, welcoming and incredibly talented stylists. The salon environment feels luxurious and relaxing from start to finish."
-  }
-];
+import { testimonials } from '../../data/testimonials'
 
 export default function Testimonials() {
   const [index, setIndex] = useState(0);

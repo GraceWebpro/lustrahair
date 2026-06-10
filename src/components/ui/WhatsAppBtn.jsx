@@ -4,7 +4,7 @@ const WhatsAppButton = () => {
   const phoneNumber = "2347043421913";
 
   const message = encodeURIComponent(
-    "Hello, I would like to book an appointment at PrimeCut Barbershop."
+    "Hello, I would like to book an appointment at LustraHair d[[[ ]]]."
   );
 
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
